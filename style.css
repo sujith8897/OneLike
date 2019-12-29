@@ -1,0 +1,86 @@
+.btn-block{
+	text-align: center;
+	margin-top:10px;
+	margin-left:10%;
+	margin-right: 10%;
+	width:84%;
+}
+.fa-thumbs-up{
+	color: white;
+
+}
+.b1{
+	margin-left: 55%; 
+}
+.b2{
+	margin-left: 20%;
+}
+.images b{
+	font-size: 30px;
+	margin: 10px;
+}
+.images i{
+	color: black;
+	font-size: 40px;
+    margin: 10px;
+}
+.img01{
+	float: left;
+	width: 50%;
+
+}
+.img01 img{
+	margin-left: 35%;
+}
+.img01 b{
+	margin-left: 40%;
+}
+.img02{
+	float: right;
+	width: 50%;
+
+}
+.img02 b{
+	margin-left: 8%;
+}
+}
+.one,.two{
+	color: black;
+	
+}
+.one:hover,.two:hover{
+	color: blue;
+}
+.submit{
+	margin-left: 45%;
+}
+.winner{
+	text-align: center;
+	color: green;
+}
+blink {
+  -webkit-animation: 1s linear infinite condemned_blink_effect; // for Safari 4.0 - 8.0
+  animation: 1 linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect { // for Safari 4.0 - 8.0
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

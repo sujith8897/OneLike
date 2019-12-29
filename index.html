@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>One Like</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="script.js"></script>
+
+</head>	
+<body >
+	<div ng-app="myApp" ng-controller="myCtrl">
+<button type="button" class="btn btn-primary  btn-block" ><h2>One Like ! <i class="fa fa-thumbs-up"></i></h2></button>
+<br>
+<div style="text-align: center;">
+<h3>
+	You have '<b style="color: red;">{{t}}</b>'  Like(s) left!
+</h3>
+</div>
+<div class="winner">
+<div ng-show="showWinner1">
+	<blink><h1>Congrats, India won by {{score}} point(s)!</h1></blink>
+	<img src="rv.jpg" width="80%" height="80%" ng-click="clickImg01()"><br>
+</div>
+<div ng-show="showWinner2">
+	<blink><h1>Congrats, Australia won by {{score}} point(s)!</h1></blink>
+	<img src="sw.jpg" width="80%" height="80%" ><br>
+</div>
+</div>
+<br>
+<div class="images">
+	<div class="img01">
+		<img src="rv.jpg" width="60%" height="60%" ng-click="clickImg01()"><br>
+        <b >India <i class="fa fa-thumbs-up one" ng-click="clickOne()" style="color: {{x}}"></i><b>Score:{{score1}}</b></b><br>
+
+        <button ng-show="showMe1" class="btn btn-success b1" ng-click="btnOne()">Submit</button>
+    </div>
+
+    <div class="img02">
+    	<img src="sw.jpg" width="50%" height="50%" ><br>
+        <b >Australia<i class="fa fa-thumbs-up two" ng-click="clickTwo()" style="color: {{x1}}"></i><br><b>Score:{{score2}}</b></b><br>
+        <button ng-show="showMe2" class="btn btn-success b2" ng-click="btnTwo()">Submit</button>
+    </div>
+</div>
+</div>
+<br><br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
